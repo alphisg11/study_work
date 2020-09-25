@@ -25,6 +25,9 @@ function tc() {
 function time(a, b, c) {
 	if(a > 0 && a < 2100) { //年份检测在公元1年至公元2099年为合法年份
 		if(a % 4 == 0) { //首先检测是否为闰年
+			if(b < 1 || b > 13) {
+				untime();
+			}
 			if(b == 2) { //闰年的情况下先检测2月的日期是否合法
 				if(c > 0 && c < 29) {
 					ontime();
@@ -47,6 +50,9 @@ function time(a, b, c) {
 				}
 			}
 		} else {
+			if(b < 1 || b > 13) {
+				untime();
+			}
 			if(b == 2) { //非闰年的情况下先检测2月的日期是否合法
 				if(c > 0 && c < 30) {
 					ontime();
