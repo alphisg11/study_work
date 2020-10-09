@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="js/work.js"></script>
+		<style>
+			.cb {
+				height: 30px;
+				width: 200px;
+				border: 1px #000 solid;
+				margin: 1px;
+			}
+			 
+			.cb:nth-child(2n+0) {
+				background: #ff0000;
+			}
+			
+			.cb:nth-child(2n+1) {
+				background: #0000ff;
+			}
+			
+			img {
+				height: auto;
+				width: auto;
+				max-height: 200px;
+				max-width: 200px;
+			}
+			.pic{
+				height: 400px;
+				width: 400px;
+			}
+				
+			.pic img{
+				height: auto;
+				width: auto;
+				max-height: 400px;
+				max-width: 400px;
+			}
+			table{
+				text-align: center;
+			}
+			table tr td{
+				height: 200px;
+				width: 200px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>work 1</h1>
+		<input id="ip1" type="text" placeholder="姓名" />
+		<input name="ip2" type="text" placeholder="性别" />
+		<input class="ip3" type="text" placeholder="年龄" />
+		<input type="text" placeholder="学历" />
+		<input type="text" placeholder="专业" />
+		<button onclick="save()">保存</button>
+		<h1>work 2</h1>
+		<div class="cb"></div>
+		<div class="cb"></div>
+		<div class="cb"></div>
+		<div class="cb"></div>
+		<div class="cb"></div>
+		<div class="cb"></div>
+		<h1>work 3</h1>
+		<table border="">
+			<tr>
+				<td class="pic" rowspan="2" colspan="2">
+					<img id="pictop" src="img/68068733_p43.png" />
+				</td>
+				<td>
+					<img onclick="piccover(this)" src="img/68068733_p43.png" />
+				</td>
+				<td>
+					<img onclick="piccover(this)" src="img/72232168_p0.png" />
+				</td>
+				<td>
+					<img onclick="piccover(this)" src="img/72232168_p35.png" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img onclick="piccover(this)" src="img/72232168_p70.png" />
+				</td>
+				<td>
+					<img onclick="piccover(this)" src="img/73495715_p15.jpg" />
+				</td>
+				<td>
+					<img onclick="piccover(this)" src="img/74535310_p15.jpg" />
+				</td>
+
+			</tr>
+			<tr>
+				<td>
+					<img onclick="piccover(this)" src="img/77912398_p55.jpg" />
+				</td>
+				<td>
+					<img onclick="piccover(this)" src="img/79270076_p13.jpg" />
+				</td>
+				<td>
+					<img onclick="piccover(this)" src="img/80223789_p0.jpg" />
+				</td>
+
+				<td>
+					<img onclick="piccover(this)" src="img/74871466_p0.jpg" />
+				</td>
+				<td>
+					<img onclick="piccover(this)" src="img/79270076_p29.jpg" />
+				</td>
+			</tr>
+		</table>
+	</body>
+
+</html>
